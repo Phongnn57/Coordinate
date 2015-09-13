@@ -7,6 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4F0097C1BA5C58200E354E8 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009731BA5C58200E354E8 /* ArrayExtension.swift */; };
+		A4F0097D1BA5C58200E354E8 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009741BA5C58200E354E8 /* NSDateExtension.swift */; };
+		A4F0097E1BA5C58200E354E8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009751BA5C58200E354E8 /* StringExtension.swift */; };
+		A4F0097F1BA5C58200E354E8 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009761BA5C58200E354E8 /* UIButtonExtension.swift */; };
+		A4F009801BA5C58200E354E8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009771BA5C58200E354E8 /* UIColorExtension.swift */; };
+		A4F009811BA5C58200E354E8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009781BA5C58200E354E8 /* UIImageExtension.swift */; };
+		A4F009821BA5C58200E354E8 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009791BA5C58200E354E8 /* UITextFieldExtension.swift */; };
+		A4F009831BA5C58200E354E8 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0097A1BA5C58200E354E8 /* UITextViewExtension.swift */; };
+		A4F009841BA5C58200E354E8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0097B1BA5C58200E354E8 /* UIViewExtension.swift */; };
+		A4F0098B1BA5C5CB00E354E8 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F009851BA5C5CB00E354E8 /* Roboto-Black.ttf */; };
+		A4F0098C1BA5C5CB00E354E8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F009861BA5C5CB00E354E8 /* Roboto-Bold.ttf */; };
+		A4F0098D1BA5C5CB00E354E8 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F009871BA5C5CB00E354E8 /* Roboto-Light.ttf */; };
+		A4F0098E1BA5C5CB00E354E8 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F009881BA5C5CB00E354E8 /* Roboto-Medium.ttf */; };
+		A4F0098F1BA5C5CB00E354E8 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F009891BA5C5CB00E354E8 /* Roboto-Regular.ttf */; };
+		A4F009901BA5C5CB00E354E8 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F0098A1BA5C5CB00E354E8 /* Roboto-Thin.ttf */; };
+		A4F009941BA5C79700E354E8 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009921BA5C79700E354E8 /* AppConstant.swift */; };
+		A4F009951BA5C79700E354E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009931BA5C79700E354E8 /* Utilities.swift */; };
+		A4F009981BA5C84600E354E8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009961BA5C84600E354E8 /* WelcomeViewController.swift */; };
+		A4F009991BA5C84600E354E8 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009971BA5C84600E354E8 /* WelcomeViewController.xib */; };
+		A4F0099C1BA5C8B000E354E8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0099A1BA5C8B000E354E8 /* CategoryViewController.swift */; };
+		A4F0099D1BA5C8B000E354E8 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F0099B1BA5C8B000E354E8 /* CategoryViewController.xib */; };
+		A4F009A11BA5CC2C00E354E8 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0099F1BA5CC2C00E354E8 /* FavoriteCell.swift */; };
+		A4F009A21BA5CC2C00E354E8 /* FavoriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009A01BA5CC2C00E354E8 /* FavoriteCell.xib */; };
+		A4F009A61BA5CF8B00E354E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009A41BA5CF8B00E354E8 /* SettingViewController.swift */; };
+		A4F009A71BA5CF8B00E354E8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009A51BA5CF8B00E354E8 /* SettingViewController.xib */; };
+		A4F009AB1BA5D02500E354E8 /* SettingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009A91BA5D02500E354E8 /* SettingSwitchCell.swift */; };
+		A4F009AC1BA5D02500E354E8 /* SettingSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009AA1BA5D02500E354E8 /* SettingSwitchCell.xib */; };
+		A4F009AF1BA5D10300E354E8 /* SettingOnlyTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009AD1BA5D10300E354E8 /* SettingOnlyTextCell.swift */; };
+		A4F009B01BA5D10300E354E8 /* SettingOnlyTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009AE1BA5D10300E354E8 /* SettingOnlyTextCell.xib */; };
+		A4F009B51BA5D1AC00E354E8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009B31BA5D1AC00E354E8 /* NotificationViewController.swift */; };
+		A4F009B61BA5D1AC00E354E8 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009B41BA5D1AC00E354E8 /* NotificationViewController.xib */; };
+		A4F009BA1BA5D1F700E354E8 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009B81BA5D1F700E354E8 /* NotificationCell.swift */; };
+		A4F009BB1BA5D1F700E354E8 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009B91BA5D1F700E354E8 /* NotificationCell.xib */; };
+		A4F009BF1BA5DB6C00E354E8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009BD1BA5DB6C00E354E8 /* MenuViewController.swift */; };
+		A4F009C01BA5DB6C00E354E8 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009BE1BA5DB6C00E354E8 /* MenuViewController.xib */; };
+		A4F009C41BA5DCE100E354E8 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009C21BA5DCE100E354E8 /* MenuCell.swift */; };
+		A4F009C51BA5DCE100E354E8 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009C31BA5DCE100E354E8 /* MenuCell.xib */; };
+		A4F009C81BA5DF8600E354E8 /* TopMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009C61BA5DF8600E354E8 /* TopMenuCell.swift */; };
+		A4F009C91BA5DF8600E354E8 /* TopMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009C71BA5DF8600E354E8 /* TopMenuCell.xib */; };
+		A4F009CE1BA5E17700E354E8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009CC1BA5E17700E354E8 /* EditProfileViewController.swift */; };
+		A4F009CF1BA5E17700E354E8 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F009CD1BA5E17700E354E8 /* EditProfileViewController.xib */; };
 		A4FC2C0E1B91FADD000AFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC2C0D1B91FADD000AFD50 /* AppDelegate.swift */; };
 		A4FC2C101B91FADD000AFD50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC2C0F1B91FADD000AFD50 /* ViewController.swift */; };
 		A4FC2C131B91FADD000AFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C111B91FADD000AFD50 /* Main.storyboard */; };
@@ -42,6 +83,47 @@
 /* Begin PBXFileReference section */
 		22998F17A84CD4856F3D9FAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8B56076838BA6FE84E4509D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F009731BA5C58200E354E8 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		A4F009741BA5C58200E354E8 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		A4F009751BA5C58200E354E8 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A4F009761BA5C58200E354E8 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		A4F009771BA5C58200E354E8 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A4F009781BA5C58200E354E8 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		A4F009791BA5C58200E354E8 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		A4F0097A1BA5C58200E354E8 /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		A4F0097B1BA5C58200E354E8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A4F009851BA5C5CB00E354E8 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A4F009861BA5C5CB00E354E8 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A4F009871BA5C5CB00E354E8 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A4F009881BA5C5CB00E354E8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A4F009891BA5C5CB00E354E8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A4F0098A1BA5C5CB00E354E8 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A4F009921BA5C79700E354E8 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		A4F009931BA5C79700E354E8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A4F009961BA5C84600E354E8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A4F009971BA5C84600E354E8 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		A4F0099A1BA5C8B000E354E8 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A4F0099B1BA5C8B000E354E8 /* CategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		A4F0099F1BA5CC2C00E354E8 /* FavoriteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		A4F009A01BA5CC2C00E354E8 /* FavoriteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCell.xib; sourceTree = "<group>"; };
+		A4F009A41BA5CF8B00E354E8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A4F009A51BA5CF8B00E354E8 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		A4F009A91BA5D02500E354E8 /* SettingSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingSwitchCell.swift; sourceTree = "<group>"; };
+		A4F009AA1BA5D02500E354E8 /* SettingSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSwitchCell.xib; sourceTree = "<group>"; };
+		A4F009AD1BA5D10300E354E8 /* SettingOnlyTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingOnlyTextCell.swift; sourceTree = "<group>"; };
+		A4F009AE1BA5D10300E354E8 /* SettingOnlyTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingOnlyTextCell.xib; sourceTree = "<group>"; };
+		A4F009B31BA5D1AC00E354E8 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		A4F009B41BA5D1AC00E354E8 /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		A4F009B81BA5D1F700E354E8 /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		A4F009B91BA5D1F700E354E8 /* NotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		A4F009BD1BA5DB6C00E354E8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A4F009BE1BA5DB6C00E354E8 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		A4F009C21BA5DCE100E354E8 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		A4F009C31BA5DCE100E354E8 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		A4F009C61BA5DF8600E354E8 /* TopMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuCell.swift; sourceTree = "<group>"; };
+		A4F009C71BA5DF8600E354E8 /* TopMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopMenuCell.xib; sourceTree = "<group>"; };
+		A4F009CC1BA5E17700E354E8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		A4F009CD1BA5E17700E354E8 /* EditProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
 		A4FC2C081B91FADD000AFD50 /* FashionSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FC2C0C1B91FADD000AFD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4FC2C0D1B91FADD000AFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +186,118 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A4F009721BA5C58200E354E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009731BA5C58200E354E8 /* ArrayExtension.swift */,
+				A4F009741BA5C58200E354E8 /* NSDateExtension.swift */,
+				A4F009751BA5C58200E354E8 /* StringExtension.swift */,
+				A4F009761BA5C58200E354E8 /* UIButtonExtension.swift */,
+				A4F009771BA5C58200E354E8 /* UIColorExtension.swift */,
+				A4F009781BA5C58200E354E8 /* UIImageExtension.swift */,
+				A4F009791BA5C58200E354E8 /* UITextFieldExtension.swift */,
+				A4F0097A1BA5C58200E354E8 /* UITextViewExtension.swift */,
+				A4F0097B1BA5C58200E354E8 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4F009911BA5C78C00E354E8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009921BA5C79700E354E8 /* AppConstant.swift */,
+				A4F009931BA5C79700E354E8 /* Utilities.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4F0099E1BA5CC1C00E354E8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4F0099F1BA5CC2C00E354E8 /* FavoriteCell.swift */,
+				A4F009A01BA5CC2C00E354E8 /* FavoriteCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4F009A31BA5CF7C00E354E8 /* Setting View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009A81BA5D00500E354E8 /* Cell */,
+				A4F009A41BA5CF8B00E354E8 /* SettingViewController.swift */,
+				A4F009A51BA5CF8B00E354E8 /* SettingViewController.xib */,
+			);
+			path = "Setting View Controller";
+			sourceTree = "<group>";
+		};
+		A4F009A81BA5D00500E354E8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009A91BA5D02500E354E8 /* SettingSwitchCell.swift */,
+				A4F009AA1BA5D02500E354E8 /* SettingSwitchCell.xib */,
+				A4F009AD1BA5D10300E354E8 /* SettingOnlyTextCell.swift */,
+				A4F009AE1BA5D10300E354E8 /* SettingOnlyTextCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4F009B21BA5D19E00E354E8 /* Notification View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009B71BA5D1E400E354E8 /* Cell */,
+				A4F009B31BA5D1AC00E354E8 /* NotificationViewController.swift */,
+				A4F009B41BA5D1AC00E354E8 /* NotificationViewController.xib */,
+			);
+			path = "Notification View Controller";
+			sourceTree = "<group>";
+		};
+		A4F009B71BA5D1E400E354E8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009B81BA5D1F700E354E8 /* NotificationCell.swift */,
+				A4F009B91BA5D1F700E354E8 /* NotificationCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4F009BC1BA5DB5C00E354E8 /* Menu View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009C11BA5DCD200E354E8 /* Cell */,
+				A4F009BD1BA5DB6C00E354E8 /* MenuViewController.swift */,
+				A4F009BE1BA5DB6C00E354E8 /* MenuViewController.xib */,
+			);
+			path = "Menu View Controller";
+			sourceTree = "<group>";
+		};
+		A4F009C11BA5DCD200E354E8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009C21BA5DCE100E354E8 /* MenuCell.swift */,
+				A4F009C31BA5DCE100E354E8 /* MenuCell.xib */,
+				A4F009C61BA5DF8600E354E8 /* TopMenuCell.swift */,
+				A4F009C71BA5DF8600E354E8 /* TopMenuCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4F009CA1BA5E15700E354E8 /* Profile View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009CB1BA5E16700E354E8 /* Edit Profile View Controller */,
+			);
+			path = "Profile View Controller";
+			sourceTree = "<group>";
+		};
+		A4F009CB1BA5E16700E354E8 /* Edit Profile View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4F009CC1BA5E17700E354E8 /* EditProfileViewController.swift */,
+				A4F009CD1BA5E17700E354E8 /* EditProfileViewController.xib */,
+			);
+			path = "Edit Profile View Controller";
+			sourceTree = "<group>";
+		};
 		A4FC2BFF1B91FADD000AFD50 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +321,8 @@
 		A4FC2C0A1B91FADD000AFD50 /* FashionSocial */ = {
 			isa = PBXGroup;
 			children = (
+				A4F009911BA5C78C00E354E8 /* Utils */,
+				A4F009721BA5C58200E354E8 /* Extensions */,
 				A4FC2C381B9200F5000AFD50 /* Customizes */,
 				A4FC2C2F1B91FE91000AFD50 /* View Controllers */,
 				A4FC2C0D1B91FADD000AFD50 /* AppDelegate.swift */,
@@ -167,6 +363,10 @@
 		A4FC2C2F1B91FE91000AFD50 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A4F009CA1BA5E15700E354E8 /* Profile View Controller */,
+				A4F009BC1BA5DB5C00E354E8 /* Menu View Controller */,
+				A4F009B21BA5D19E00E354E8 /* Notification View Controller */,
+				A4F009A31BA5CF7C00E354E8 /* Setting View Controller */,
 				A4FC2C351B91FFAC000AFD50 /* Base View Controller */,
 				A4FC2C301B91FE9E000AFD50 /* Login & Register */,
 			);
@@ -176,8 +376,13 @@
 		A4FC2C301B91FE9E000AFD50 /* Login & Register */ = {
 			isa = PBXGroup;
 			children = (
+				A4F0099E1BA5CC1C00E354E8 /* Cell */,
 				A4FC2C311B91FEAC000AFD50 /* LoginViewController.swift */,
 				A4FC2C321B91FEAC000AFD50 /* LoginViewController.xib */,
+				A4F009961BA5C84600E354E8 /* WelcomeViewController.swift */,
+				A4F009971BA5C84600E354E8 /* WelcomeViewController.xib */,
+				A4F0099A1BA5C8B000E354E8 /* CategoryViewController.swift */,
+				A4F0099B1BA5C8B000E354E8 /* CategoryViewController.xib */,
 			);
 			path = "Login & Register";
 			sourceTree = "<group>";
@@ -201,6 +406,12 @@
 		A4FC2C391B9200FE000AFD50 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				A4F009851BA5C5CB00E354E8 /* Roboto-Black.ttf */,
+				A4F009861BA5C5CB00E354E8 /* Roboto-Bold.ttf */,
+				A4F009871BA5C5CB00E354E8 /* Roboto-Light.ttf */,
+				A4F009881BA5C5CB00E354E8 /* Roboto-Medium.ttf */,
+				A4F009891BA5C5CB00E354E8 /* Roboto-Regular.ttf */,
+				A4F0098A1BA5C5CB00E354E8 /* Roboto-Thin.ttf */,
 				A4FC2C3A1B92010B000AFD50 /* OpenSans-Bold.ttf */,
 				A4FC2C3B1B92010B000AFD50 /* OpenSans-BoldItalic.ttf */,
 				A4FC2C3C1B92010B000AFD50 /* OpenSans-ExtraBold.ttf */,
@@ -299,17 +510,35 @@
 			files = (
 				A4FC2C481B92010B000AFD50 /* OpenSans-Italic.ttf in Resources */,
 				A4FC2C451B92010B000AFD50 /* OpenSans-BoldItalic.ttf in Resources */,
+				A4F0098B1BA5C5CB00E354E8 /* Roboto-Black.ttf in Resources */,
 				A4FC2C341B91FEAC000AFD50 /* LoginViewController.xib in Resources */,
+				A4F009CF1BA5E17700E354E8 /* EditProfileViewController.xib in Resources */,
+				A4F009BB1BA5D1F700E354E8 /* NotificationCell.xib in Resources */,
 				A4FC2C4C1B92010B000AFD50 /* OpenSans-Semibold.ttf in Resources */,
 				A4FC2C461B92010B000AFD50 /* OpenSans-ExtraBold.ttf in Resources */,
 				A4FC2C131B91FADD000AFD50 /* Main.storyboard in Resources */,
+				A4F009AC1BA5D02500E354E8 /* SettingSwitchCell.xib in Resources */,
+				A4F009A71BA5CF8B00E354E8 /* SettingViewController.xib in Resources */,
 				A4FC2C4A1B92010B000AFD50 /* OpenSans-LightItalic.ttf in Resources */,
+				A4F009C91BA5DF8600E354E8 /* TopMenuCell.xib in Resources */,
+				A4F009991BA5C84600E354E8 /* WelcomeViewController.xib in Resources */,
+				A4F009C51BA5DCE100E354E8 /* MenuCell.xib in Resources */,
+				A4F009901BA5C5CB00E354E8 /* Roboto-Thin.ttf in Resources */,
+				A4F0098E1BA5C5CB00E354E8 /* Roboto-Medium.ttf in Resources */,
 				A4FC2C181B91FADD000AFD50 /* LaunchScreen.xib in Resources */,
 				A4FC2C441B92010B000AFD50 /* OpenSans-Bold.ttf in Resources */,
+				A4F009B61BA5D1AC00E354E8 /* NotificationViewController.xib in Resources */,
 				A4FC2C151B91FADD000AFD50 /* Images.xcassets in Resources */,
 				A4FC2C4D1B92010B000AFD50 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				A4F009C01BA5DB6C00E354E8 /* MenuViewController.xib in Resources */,
+				A4F0098D1BA5C5CB00E354E8 /* Roboto-Light.ttf in Resources */,
 				A4FC2C491B92010B000AFD50 /* OpenSans-Light.ttf in Resources */,
+				A4F0098F1BA5C5CB00E354E8 /* Roboto-Regular.ttf in Resources */,
+				A4F0099D1BA5C8B000E354E8 /* CategoryViewController.xib in Resources */,
+				A4F009A21BA5CC2C00E354E8 /* FavoriteCell.xib in Resources */,
 				A4FC2C4B1B92010B000AFD50 /* OpenSans-Regular.ttf in Resources */,
+				A4F009B01BA5D10300E354E8 /* SettingOnlyTextCell.xib in Resources */,
+				A4F0098C1BA5C5CB00E354E8 /* Roboto-Bold.ttf in Resources */,
 				A4FC2C471B92010B000AFD50 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,10 +590,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F0097D1BA5C58200E354E8 /* NSDateExtension.swift in Sources */,
+				A4F009981BA5C84600E354E8 /* WelcomeViewController.swift in Sources */,
+				A4F009BA1BA5D1F700E354E8 /* NotificationCell.swift in Sources */,
+				A4F009AB1BA5D02500E354E8 /* SettingSwitchCell.swift in Sources */,
+				A4F0099C1BA5C8B000E354E8 /* CategoryViewController.swift in Sources */,
+				A4F0097F1BA5C58200E354E8 /* UIButtonExtension.swift in Sources */,
+				A4F0097E1BA5C58200E354E8 /* StringExtension.swift in Sources */,
+				A4F009BF1BA5DB6C00E354E8 /* MenuViewController.swift in Sources */,
+				A4F009951BA5C79700E354E8 /* Utilities.swift in Sources */,
+				A4F009831BA5C58200E354E8 /* UITextViewExtension.swift in Sources */,
+				A4F009811BA5C58200E354E8 /* UIImageExtension.swift in Sources */,
+				A4F0097C1BA5C58200E354E8 /* ArrayExtension.swift in Sources */,
+				A4F009821BA5C58200E354E8 /* UITextFieldExtension.swift in Sources */,
 				A4FC2C331B91FEAC000AFD50 /* LoginViewController.swift in Sources */,
+				A4F009B51BA5D1AC00E354E8 /* NotificationViewController.swift in Sources */,
+				A4F009801BA5C58200E354E8 /* UIColorExtension.swift in Sources */,
+				A4F009C81BA5DF8600E354E8 /* TopMenuCell.swift in Sources */,
+				A4F009941BA5C79700E354E8 /* AppConstant.swift in Sources */,
+				A4F009AF1BA5D10300E354E8 /* SettingOnlyTextCell.swift in Sources */,
+				A4F009841BA5C58200E354E8 /* UIViewExtension.swift in Sources */,
 				A4FC2C371B91FFB6000AFD50 /* BaseViewController.swift in Sources */,
+				A4F009A11BA5CC2C00E354E8 /* FavoriteCell.swift in Sources */,
+				A4F009C41BA5DCE100E354E8 /* MenuCell.swift in Sources */,
+				A4F009A61BA5CF8B00E354E8 /* SettingViewController.swift in Sources */,
 				A4FC2C101B91FADD000AFD50 /* ViewController.swift in Sources */,
 				A4FC2C0E1B91FADD000AFD50 /* AppDelegate.swift in Sources */,
+				A4F009CE1BA5E17700E354E8 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +745,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FashionSocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -504,6 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FashionSocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

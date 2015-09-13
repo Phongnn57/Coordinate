@@ -10,21 +10,21 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var btnSkip: UIButton!
+    @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "hideKeyboard"))
+
+        self.initialize()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    func hideKeyboard() {
-        self.email.resignFirstResponder()
-        self.password.resignFirstResponder()
+    
+    func initialize() {
+        self.btnLogin.layer.cornerRadius = (SCREEN_SIZE.width - 80) / 12
     }
+
 }

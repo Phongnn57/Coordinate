@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         
-        self.window?.rootViewController = LoginViewController()
+        self.window?.rootViewController = UINavigationController(rootViewController: MenuViewController())
         
         return true
     }
