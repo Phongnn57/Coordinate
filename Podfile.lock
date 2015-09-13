@@ -38,6 +38,8 @@ PODS:
   - FBSDKCoreKit/no-arc (4.5.1):
     - Bolts (~> 1.1)
     - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.6.0):
+    - FBSDKCoreKit
   - FBSDKShareKit (4.5.1):
     - FBSDKCoreKit
   - IDMPhotoBrowser (1.7):
@@ -96,6 +98,8 @@ DEPENDENCIES:
   - AFNetworking
   - AGEmojiKeyboard
   - DZNEmptyDataSet
+  - FBSDKCoreKit
+  - FBSDKLoginKit
   - FBSDKShareKit
   - IDMPhotoBrowser
   - JSQMessagesViewController
@@ -121,6 +125,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DZNEmptyDataSet: 2a398066c2bf5848f7f693fb50954b5064debd12
   FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
+  FBSDKLoginKit: 3d07febbfa884b9878cacba54f705bb41f07d4b6
   FBSDKShareKit: 642034ac9f30793dfd897851b724bb4281750266
   IDMPhotoBrowser: 1155caa03f8705b7943c074c26b55aadd43d71da
   JSQMessagesViewController: ca11f86fa68ca70835f05e169df9244147c1dc40
