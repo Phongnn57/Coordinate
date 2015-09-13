@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4FC2C0E1B91FADD000AFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC2C0D1B91FADD000AFD50 /* AppDelegate.swift */; };
+		A4FC2C101B91FADD000AFD50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC2C0F1B91FADD000AFD50 /* ViewController.swift */; };
+		A4FC2C131B91FADD000AFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C111B91FADD000AFD50 /* Main.storyboard */; };
+		A4FC2C151B91FADD000AFD50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C141B91FADD000AFD50 /* Images.xcassets */; };
+		A4FC2C181B91FADD000AFD50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C161B91FADD000AFD50 /* LaunchScreen.xib */; };
+		A4FC2C241B91FADD000AFD50 /* FashionSocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC2C231B91FADD000AFD50 /* FashionSocialTests.swift */; };
+		A4FC2C331B91FEAC000AFD50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC2C311B91FEAC000AFD50 /* LoginViewController.swift */; };
+		A4FC2C341B91FEAC000AFD50 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C321B91FEAC000AFD50 /* LoginViewController.xib */; };
+		A4FC2C371B91FFB6000AFD50 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC2C361B91FFB6000AFD50 /* BaseViewController.swift */; };
+		A4FC2C441B92010B000AFD50 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C3A1B92010B000AFD50 /* OpenSans-Bold.ttf */; };
+		A4FC2C451B92010B000AFD50 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C3B1B92010B000AFD50 /* OpenSans-BoldItalic.ttf */; };
+		A4FC2C461B92010B000AFD50 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C3C1B92010B000AFD50 /* OpenSans-ExtraBold.ttf */; };
+		A4FC2C471B92010B000AFD50 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C3D1B92010B000AFD50 /* OpenSans-ExtraBoldItalic.ttf */; };
+		A4FC2C481B92010B000AFD50 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C3E1B92010B000AFD50 /* OpenSans-Italic.ttf */; };
+		A4FC2C491B92010B000AFD50 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C3F1B92010B000AFD50 /* OpenSans-Light.ttf */; };
+		A4FC2C4A1B92010B000AFD50 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C401B92010B000AFD50 /* OpenSans-LightItalic.ttf */; };
+		A4FC2C4B1B92010B000AFD50 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C411B92010B000AFD50 /* OpenSans-Regular.ttf */; };
+		A4FC2C4C1B92010B000AFD50 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C421B92010B000AFD50 /* OpenSans-Semibold.ttf */; };
+		A4FC2C4D1B92010B000AFD50 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC2C431B92010B000AFD50 /* OpenSans-SemiboldItalic.ttf */; };
+		AEAA0AA052C9B8A224308BA1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B56076838BA6FE84E4509D0 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4FC2C1E1B91FADD000AFD50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4FC2C001B91FADD000AFD50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4FC2C071B91FADD000AFD50;
+			remoteInfo = FashionSocial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22998F17A84CD4856F3D9FAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8B56076838BA6FE84E4509D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FC2C081B91FADD000AFD50 /* FashionSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FC2C0C1B91FADD000AFD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4FC2C0D1B91FADD000AFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4FC2C0F1B91FADD000AFD50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4FC2C121B91FADD000AFD50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4FC2C141B91FADD000AFD50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4FC2C171B91FADD000AFD50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A4FC2C1D1B91FADD000AFD50 /* FashionSocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionSocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FC2C221B91FADD000AFD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4FC2C231B91FADD000AFD50 /* FashionSocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionSocialTests.swift; sourceTree = "<group>"; };
+		A4FC2C311B91FEAC000AFD50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A4FC2C321B91FEAC000AFD50 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A4FC2C361B91FFB6000AFD50 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A4FC2C3A1B92010B000AFD50 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		A4FC2C3B1B92010B000AFD50 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A4FC2C3C1B92010B000AFD50 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A4FC2C3D1B92010B000AFD50 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A4FC2C3E1B92010B000AFD50 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		A4FC2C3F1B92010B000AFD50 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		A4FC2C401B92010B000AFD50 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		A4FC2C411B92010B000AFD50 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		A4FC2C421B92010B000AFD50 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		A4FC2C431B92010B000AFD50 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		B7898B351739E0B444544E69 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4FC2C051B91FADD000AFD50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAA0AA052C9B8A224308BA1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FC2C1A1B91FADD000AFD50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33A094663288E16C75520201 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B56076838BA6FE84E4509D0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EEF5C40E0DDE00B3D207093 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22998F17A84CD4856F3D9FAC /* Pods.debug.xcconfig */,
+				B7898B351739E0B444544E69 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4FC2BFF1B91FADD000AFD50 = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C0A1B91FADD000AFD50 /* FashionSocial */,
+				A4FC2C201B91FADD000AFD50 /* FashionSocialTests */,
+				A4FC2C091B91FADD000AFD50 /* Products */,
+				6EEF5C40E0DDE00B3D207093 /* Pods */,
+				33A094663288E16C75520201 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4FC2C091B91FADD000AFD50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C081B91FADD000AFD50 /* FashionSocial.app */,
+				A4FC2C1D1B91FADD000AFD50 /* FashionSocialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4FC2C0A1B91FADD000AFD50 /* FashionSocial */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C381B9200F5000AFD50 /* Customizes */,
+				A4FC2C2F1B91FE91000AFD50 /* View Controllers */,
+				A4FC2C0D1B91FADD000AFD50 /* AppDelegate.swift */,
+				A4FC2C0F1B91FADD000AFD50 /* ViewController.swift */,
+				A4FC2C111B91FADD000AFD50 /* Main.storyboard */,
+				A4FC2C141B91FADD000AFD50 /* Images.xcassets */,
+				A4FC2C161B91FADD000AFD50 /* LaunchScreen.xib */,
+				A4FC2C0B1B91FADD000AFD50 /* Supporting Files */,
+			);
+			path = FashionSocial;
+			sourceTree = "<group>";
+		};
+		A4FC2C0B1B91FADD000AFD50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C0C1B91FADD000AFD50 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4FC2C201B91FADD000AFD50 /* FashionSocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C231B91FADD000AFD50 /* FashionSocialTests.swift */,
+				A4FC2C211B91FADD000AFD50 /* Supporting Files */,
+			);
+			path = FashionSocialTests;
+			sourceTree = "<group>";
+		};
+		A4FC2C211B91FADD000AFD50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C221B91FADD000AFD50 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4FC2C2F1B91FE91000AFD50 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C351B91FFAC000AFD50 /* Base View Controller */,
+				A4FC2C301B91FE9E000AFD50 /* Login & Register */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A4FC2C301B91FE9E000AFD50 /* Login & Register */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C311B91FEAC000AFD50 /* LoginViewController.swift */,
+				A4FC2C321B91FEAC000AFD50 /* LoginViewController.xib */,
+			);
+			path = "Login & Register";
+			sourceTree = "<group>";
+		};
+		A4FC2C351B91FFAC000AFD50 /* Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C361B91FFB6000AFD50 /* BaseViewController.swift */,
+			);
+			path = "Base View Controller";
+			sourceTree = "<group>";
+		};
+		A4FC2C381B9200F5000AFD50 /* Customizes */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C391B9200FE000AFD50 /* Font */,
+			);
+			path = Customizes;
+			sourceTree = "<group>";
+		};
+		A4FC2C391B9200FE000AFD50 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC2C3A1B92010B000AFD50 /* OpenSans-Bold.ttf */,
+				A4FC2C3B1B92010B000AFD50 /* OpenSans-BoldItalic.ttf */,
+				A4FC2C3C1B92010B000AFD50 /* OpenSans-ExtraBold.ttf */,
+				A4FC2C3D1B92010B000AFD50 /* OpenSans-ExtraBoldItalic.ttf */,
+				A4FC2C3E1B92010B000AFD50 /* OpenSans-Italic.ttf */,
+				A4FC2C3F1B92010B000AFD50 /* OpenSans-Light.ttf */,
+				A4FC2C401B92010B000AFD50 /* OpenSans-LightItalic.ttf */,
+				A4FC2C411B92010B000AFD50 /* OpenSans-Regular.ttf */,
+				A4FC2C421B92010B000AFD50 /* OpenSans-Semibold.ttf */,
+				A4FC2C431B92010B000AFD50 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4FC2C071B91FADD000AFD50 /* FashionSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4FC2C271B91FADD000AFD50 /* Build configuration list for PBXNativeTarget "FashionSocial" */;
+			buildPhases = (
+				BBA17AF61367585B2182121B /* Check Pods Manifest.lock */,
+				A4FC2C041B91FADD000AFD50 /* Sources */,
+				A4FC2C051B91FADD000AFD50 /* Frameworks */,
+				A4FC2C061B91FADD000AFD50 /* Resources */,
+				5CD2C4E1653AC8E08B978156 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FashionSocial;
+			productName = FashionSocial;
+			productReference = A4FC2C081B91FADD000AFD50 /* FashionSocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4FC2C1C1B91FADD000AFD50 /* FashionSocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4FC2C2A1B91FADD000AFD50 /* Build configuration list for PBXNativeTarget "FashionSocialTests" */;
+			buildPhases = (
+				A4FC2C191B91FADD000AFD50 /* Sources */,
+				A4FC2C1A1B91FADD000AFD50 /* Frameworks */,
+				A4FC2C1B1B91FADD000AFD50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4FC2C1F1B91FADD000AFD50 /* PBXTargetDependency */,
+			);
+			name = FashionSocialTests;
+			productName = FashionSocialTests;
+			productReference = A4FC2C1D1B91FADD000AFD50 /* FashionSocialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4FC2C001B91FADD000AFD50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = SkyDance;
+				TargetAttributes = {
+					A4FC2C071B91FADD000AFD50 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A4FC2C1C1B91FADD000AFD50 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A4FC2C071B91FADD000AFD50;
+					};
+				};
+			};
+			buildConfigurationList = A4FC2C031B91FADD000AFD50 /* Build configuration list for PBXProject "FashionSocial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4FC2BFF1B91FADD000AFD50;
+			productRefGroup = A4FC2C091B91FADD000AFD50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4FC2C071B91FADD000AFD50 /* FashionSocial */,
+				A4FC2C1C1B91FADD000AFD50 /* FashionSocialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4FC2C061B91FADD000AFD50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FC2C481B92010B000AFD50 /* OpenSans-Italic.ttf in Resources */,
+				A4FC2C451B92010B000AFD50 /* OpenSans-BoldItalic.ttf in Resources */,
+				A4FC2C341B91FEAC000AFD50 /* LoginViewController.xib in Resources */,
+				A4FC2C4C1B92010B000AFD50 /* OpenSans-Semibold.ttf in Resources */,
+				A4FC2C461B92010B000AFD50 /* OpenSans-ExtraBold.ttf in Resources */,
+				A4FC2C131B91FADD000AFD50 /* Main.storyboard in Resources */,
+				A4FC2C4A1B92010B000AFD50 /* OpenSans-LightItalic.ttf in Resources */,
+				A4FC2C181B91FADD000AFD50 /* LaunchScreen.xib in Resources */,
+				A4FC2C441B92010B000AFD50 /* OpenSans-Bold.ttf in Resources */,
+				A4FC2C151B91FADD000AFD50 /* Images.xcassets in Resources */,
+				A4FC2C4D1B92010B000AFD50 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				A4FC2C491B92010B000AFD50 /* OpenSans-Light.ttf in Resources */,
+				A4FC2C4B1B92010B000AFD50 /* OpenSans-Regular.ttf in Resources */,
+				A4FC2C471B92010B000AFD50 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FC2C1B1B91FADD000AFD50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CD2C4E1653AC8E08B978156 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA17AF61367585B2182121B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4FC2C041B91FADD000AFD50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FC2C331B91FEAC000AFD50 /* LoginViewController.swift in Sources */,
+				A4FC2C371B91FFB6000AFD50 /* BaseViewController.swift in Sources */,
+				A4FC2C101B91FADD000AFD50 /* ViewController.swift in Sources */,
+				A4FC2C0E1B91FADD000AFD50 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FC2C191B91FADD000AFD50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FC2C241B91FADD000AFD50 /* FashionSocialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4FC2C1F1B91FADD000AFD50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4FC2C071B91FADD000AFD50 /* FashionSocial */;
+			targetProxy = A4FC2C1E1B91FADD000AFD50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4FC2C111B91FADD000AFD50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4FC2C121B91FADD000AFD50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4FC2C161B91FADD000AFD50 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4FC2C171B91FADD000AFD50 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4FC2C251B91FADD000AFD50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4FC2C261B91FADD000AFD50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4FC2C281B91FADD000AFD50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22998F17A84CD4856F3D9FAC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FashionSocial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4FC2C291B91FADD000AFD50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7898B351739E0B444544E69 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FashionSocial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A4FC2C2B1B91FADD000AFD50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FashionSocialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionSocial.app/FashionSocial";
+			};
+			name = Debug;
+		};
+		A4FC2C2C1B91FADD000AFD50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FashionSocialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionSocial.app/FashionSocial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4FC2C031B91FADD000AFD50 /* Build configuration list for PBXProject "FashionSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FC2C251B91FADD000AFD50 /* Debug */,
+				A4FC2C261B91FADD000AFD50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4FC2C271B91FADD000AFD50 /* Build configuration list for PBXNativeTarget "FashionSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FC2C281B91FADD000AFD50 /* Debug */,
+				A4FC2C291B91FADD000AFD50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4FC2C2A1B91FADD000AFD50 /* Build configuration list for PBXNativeTarget "FashionSocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FC2C2B1B91FADD000AFD50 /* Debug */,
+				A4FC2C2C1B91FADD000AFD50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4FC2C001B91FADD000AFD50 /* Project object */;
+}
