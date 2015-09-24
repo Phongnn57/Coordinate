@@ -13,10 +13,16 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var btnSkip: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
     
+    var email: String!
+    var gender: Int = 0
+    var avatar: String!
+    var name: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.initialize()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +31,67 @@ class LoginViewController: BaseViewController {
     
     func initialize() {
         self.btnLogin.layer.cornerRadius = (SCREEN_SIZE.width - 80) / 12
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    // MARK: BUTTON ACTION
+    @IBAction func goToAppWithoutLogin(sender: AnyObject) {
+        DELEGATE.startApp()
+    }
+    
+    @IBAction func doLoginWithFacebook(sender: AnyObject) {
+        if(FBSDKAccessToken.currentAccessToken() != nil){
+            self.getUserProfile({ () -> Void in
+                self.view.makeToast("Đăng nhập thành công")
+                self.gotoWelcomePage()
+            })
+        }else{
+            let login = FBSDKLoginManager()
+            login.logInWithReadPermissions(["email", "public_profile"], fromViewController: self, handler: { (result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
+                if (error == nil && !result.isCancelled && result.grantedPermissions.contains("email")) {
+                    self.getUserProfile({ () -> Void in
+                        self.view.makeToast("Đăng nhập thành công")
+                        self.gotoWelcomePage()
+                    })
+                }
+            })
+        }
+    }
+    
+    func gotoWelcomePage() {
+        let welcomePageViewController = WelcomeViewController()
+        self.navigationController?.pushViewController(welcomePageViewController, animated: true)
+    }
+    
+    func getUserProfile(completion:()->Void) {
+        MRProgressOverlayView.showOverlayAddedTo(self.view, title: "", mode: MRProgressOverlayViewMode.IndeterminateSmall, animated: true)
+        FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, gender, picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
+            if (error == nil){
+                if let _email = result["email"] as? String {
+                    self.email = _email
+                }
+                if let _gender = result["gender"] as? String {
+                    if _gender == "male" {
+                        self.gender = 0
+                    } else if _gender == "female" {
+                        self.gender = 1
+                    }
+                }
+                if let _name = result["name"] as? String {
+                    self.name = _name
+                }
+                
+                if let _picture = result["picture"] as? Dictionary<String, AnyObject> {
+                    if let _data = _picture["data"] as? Dictionary<String, AnyObject> {
+                        if let _photoURL = _data["url"] as? String {
+                            self.avatar = _photoURL
+                        }
+                    }
+                }
+                MRProgressOverlayView.dismissOverlayForView(self.view, animated: true)
+                completion()
+            }
+        })
     }
 
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Roboto-Medium.ttf">
@@ -11,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SettingSwitchCell" customModule="FashionSocial" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SettingSwitchCell" customModule="FashionSocial" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0be-Zo-0fD">
@@ -31,13 +32,23 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aah-aa-F1R">
+                        <rect key="frame" x="0.0" y="43" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="1bk-FR-ENN"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="aah-aa-F1R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hoa-Zz-Exb"/>
+                    <constraint firstAttribute="trailing" secondItem="aah-aa-F1R" secondAttribute="trailing" id="K9B-nZ-hgK"/>
                     <constraint firstItem="0be-Zo-0fD" firstAttribute="leading" secondItem="O2M-pn-Kii" secondAttribute="trailing" constant="8" id="Lun-cI-hcv"/>
                     <constraint firstAttribute="trailing" secondItem="0be-Zo-0fD" secondAttribute="trailing" constant="16" id="Veg-uW-VQQ"/>
                     <constraint firstAttribute="centerY" secondItem="O2M-pn-Kii" secondAttribute="centerY" id="dEN-Rq-QGQ"/>
                     <constraint firstItem="O2M-pn-Kii" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nl3-0D-xvl"/>
                     <constraint firstAttribute="centerY" secondItem="0be-Zo-0fD" secondAttribute="centerY" id="xGg-ss-B9h"/>
+                    <constraint firstAttribute="bottom" secondItem="aah-aa-F1R" secondAttribute="bottom" id="zMS-1R-daF"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="352" y="354"/>

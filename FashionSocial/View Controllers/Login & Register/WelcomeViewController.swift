@@ -12,8 +12,8 @@ class WelcomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.initialize()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +21,14 @@ class WelcomeViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func initialize() {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    @IBAction func gotoNextPage(sender: AnyObject) {
+        let categoryViewController = CategoryViewController()
+        categoryViewController.fromLogin = true
+        self.navigationController?.pushViewController(categoryViewController, animated: true)
+    }
+    
 }

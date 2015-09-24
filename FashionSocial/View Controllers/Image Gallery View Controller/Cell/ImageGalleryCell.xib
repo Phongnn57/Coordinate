@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageGalleryCell" customModule="FashionSocial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="122"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_profile" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-dH-iQx">
+                        <rect key="frame" x="0.0" y="0.0" width="146" height="122"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GHB-dH-iQx" secondAttribute="bottom" id="GCB-Aj-AnK"/>
+                <constraint firstItem="GHB-dH-iQx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TIw-5V-VJr"/>
+                <constraint firstAttribute="trailing" secondItem="GHB-dH-iQx" secondAttribute="trailing" id="TXt-aC-CQL"/>
+                <constraint firstItem="GHB-dH-iQx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gOE-5Z-Mrk"/>
+            </constraints>
+            <size key="customSize" width="146" height="122"/>
+            <point key="canvasLocation" x="277" y="315"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demo_profile" width="491" height="322"/>
+    </resources>
+</document>

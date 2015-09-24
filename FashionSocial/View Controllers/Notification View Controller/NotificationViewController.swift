@@ -26,10 +26,17 @@ class NotificationViewController: BaseViewController, UITableViewDelegate, UITab
     }
     
     func initialize() {
+        self.title = "Thông báo"
+        self.navigationItem.leftBarButtonItem = self.menuButton()
         self.tableview.registerNib(UINib(nibName: CellIdentifier, bundle: nil), forCellReuseIdentifier: CellIdentifier)
         self.refreshControl = UIRefreshControl()
         self.refreshControl.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
         self.tableview.addSubview(self.refreshControl)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     // MARK: DATA

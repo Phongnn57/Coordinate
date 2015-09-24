@@ -9,18 +9,17 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDelegate {
 
     var window: UIWindow?
-
+    var menuViewController: MenuViewController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        self.window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
+//        self.startApp()
         
-        self.window?.rootViewController = UINavigationController(rootViewController: MenuViewController())
-        
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -39,10 +38,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+
+    func startApp() {
+        let sections:NSMutableArray = NSMutableArray()
+        
+        sections.addObject(UINavigationController(rootViewController: ProfileViewController()))
+        sections.addObject(UINavigationController(rootViewController: NotificationViewController()))
+        sections.addObject(UINavigationController(rootViewController: NewsFeedViewController()))
+        sections.addObject(UINavigationController(rootViewController: BookMarkViewController()))
+        sections.addObject(UINavigationController(rootViewController: CategoryViewController()))
+        sections.addObject(UINavigationController(rootViewController: EditProfileViewController()))
+        sections.addObject(UINavigationController(rootViewController: SettingViewController()))
+        
+        let frontViewController: UIViewController = sections.objectAtIndex(2) as! UIViewController
+        
+        self.menuViewController = MenuViewController()
+        self.menuViewController.sections = sections
+        self.menuViewController.presentedRow = 2
+        
+        let revealController: SWRevealViewController = SWRevealViewController(rearViewController: self.menuViewController, frontViewController: frontViewController)
+        revealController.delegate = self
+        
+        revealController.frontViewShadowRadius = 5.0;
+        revealController.frontViewShadowOffset = CGSizeMake(0.0, 5.0);
+        revealController.frontViewShadowOpacity = 0.125;
+        revealController.frontViewShadowColor = UIColor.grayColor()
+        
+        self.window?.rootViewController = revealController
     }
 
 

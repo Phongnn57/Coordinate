@@ -11,13 +11,14 @@ import UIKit
 class CategoryViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableview: UITableView!
+    var btnDone: UIBarButtonItem!
     
+    var fromLogin: Bool = false
     private let CellIdentifier = "FavoriteCell"
     var categories = ["QUẦN ÁO NAM", "QUẦN ÁO NỮ", "VÍ DA NAM", "THẮT LƯNG NAM", "MŨ BẢO HIỂM", "SON MÔI"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.initialize()
     }
 
@@ -26,8 +27,29 @@ class CategoryViewController: BaseViewController, UITableViewDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if !self.fromLogin {
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    
     func initialize() {
+        if !self.fromLogin {
+            self.navigationItem.leftBarButtonItem = self.menuButton()
+        } else {
+            self.btnDone = UIBarButtonItem(title: "Xong", style: .Plain, target: self, action: "finishCategorySelection")
+            self.navigationItem.rightBarButtonItem = self.btnDone
+        }
+        self.navigationController?.navigationBarHidden = false
+        self.title = "Thiết lập chủ đề ưa thích"
+        self.navigationItem.setHidesBackButton(true, animated: false)
         self.tableview.registerNib(UINib(nibName: CellIdentifier, bundle: nil), forCellReuseIdentifier: CellIdentifier)
+    }
+    
+    // MARK: BUTTON ACTION
+    func finishCategorySelection() {
+        DELEGATE.startApp()
     }
     
     // MARK: TABLEVIEW METHODS

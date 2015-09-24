@@ -9,18 +9,47 @@
 import UIKit
 
 class EditProfileViewController: BaseViewController {
+    
+    @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var btnBack: UIButton!
+    
+    var isEdit: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.initialize()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+        if !self.isEdit {
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.btnBack.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+        }
+    }
+    
+    func initialize() {
+        
+    }
+    
+    // MARK: BUTTON ACTION
+    
+    @IBAction func backButtonAction(sender: AnyObject) {
+        if self.isEdit {
+            let viewControllers = self.navigationController!.viewControllers
+            let parentView = viewControllers[viewControllers.count - 2]
+            self.navigationController?.popToViewController(parentView, animated: true)
+        }
+    }
+    
+    @IBAction func updateInfo(sender: AnyObject) {
+    }
+    
 
 }

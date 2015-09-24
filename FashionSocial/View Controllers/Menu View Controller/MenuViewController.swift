@@ -12,16 +12,18 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var tableview: UITableView!
     
+    var sections: NSMutableArray!
+    var presentedRow: Int = 0
+    
     private let CellIdentifier = "MenuCell"
     private let TopCellIdentifier = "TopMenuCell"
-    private let images = ["notification", "news", "bookmark", "list", "profile", "setting"]
-    private let titles = ["THÔNG BÁO", "DÒNG THỜI GIAN", "ĐÁNH DẤU", "CÁC CHUYÊN MỤC", "THÔNG TIN CÁ NHÂN", "CÀI ĐẶT"]
+    private let images = ["", "notification", "news", "bookmark", "list", "profile", "setting"]
+    private let titles = ["", "THÔNG BÁO", "DÒNG THỜI GIAN", "ĐÁNH DẤU", "CÁC CHUYÊN MỤC", "THÔNG TIN CÁ NHÂN", "CÀI ĐẶT"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.initialize()
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,9 +52,38 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             cell.avatar.image = UIImage(named: self.images[indexPath.row])
             cell.title.text = self.titles[indexPath.row]
             
+            if indexPath.row == 1 || indexPath.row == 2 {
+                cell.badge.hidden = false
+            } else {
+                cell.badge.hidden = true
+            }
+            
             return cell
         }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var cell: UITableViewCell!
+        if indexPath.row == 0 {
+            cell = tableView.cellForRowAtIndexPath(indexPath) as! TopMenuCell
+        } else {
+            cell = tableView.cellForRowAtIndexPath(indexPath) as! MenuCell
+        }
         
+        cell.selected = false
+
+        if indexPath.row == self.presentedRow {
+            self.revealViewController().setFrontViewPosition(FrontViewPosition.Left, animated: true)
+            return
+        }
+        
+        var viewController: UIViewController!
+        viewController = (self.sections[indexPath.row] as! UIViewController)
+        
+        if viewController != nil {
+            self.revealViewController().pushFrontViewController(viewController, animated: true)
+            self.presentedRow = indexPath.row
+        }
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -64,8 +95,8 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == 0 {return 60}
-        return 44
+        if indexPath.row == 0 {return 115}
+        return 60
     }
 
 

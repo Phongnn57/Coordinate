@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4EA201D1BB3E7E200B49CB4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA201B1BB3E7E200B49CB4 /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA201E1BB3E7E200B49CB4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA201C1BB3E7E200B49CB4 /* ProfileViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		A4EA20221BB3F43000B49CB4 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA20201BB3F43000B49CB4 /* ProfileCell.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA20231BB3F43000B49CB4 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA20211BB3F43000B49CB4 /* ProfileCell.xib */; settings = {ASSET_TAGS = (); }; };
+		A4EA20271BB3FE4700B49CB4 /* ImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA20251BB3FE4700B49CB4 /* ImageGalleryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA20281BB3FE4700B49CB4 /* ImageGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA20261BB3FE4700B49CB4 /* ImageGalleryViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		A4EA202C1BB400C200B49CB4 /* ImageGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA202A1BB400C200B49CB4 /* ImageGalleryCell.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA202D1BB400C200B49CB4 /* ImageGalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA202B1BB400C200B49CB4 /* ImageGalleryCell.xib */; settings = {ASSET_TAGS = (); }; };
+		A4EA20311BB402BD00B49CB4 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA202F1BB402BD00B49CB4 /* NewsFeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA20321BB402BD00B49CB4 /* NewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA20301BB402BD00B49CB4 /* NewsFeedViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		A4EA20361BB407D900B49CB4 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA20341BB407D900B49CB4 /* NewPostViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA20371BB407D900B49CB4 /* NewPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA20351BB407D900B49CB4 /* NewPostViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		A4EA203B1BB40E1A00B49CB4 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA20391BB40E1A00B49CB4 /* BookMarkViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA203C1BB40E1A00B49CB4 /* BookMarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA203A1BB40E1A00B49CB4 /* BookMarkViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		A4EA20401BB419C600B49CB4 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA203E1BB419C600B49CB4 /* NewsFeedCell.swift */; settings = {ASSET_TAGS = (); }; };
+		A4EA20411BB419C600B49CB4 /* NewsFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA203F1BB419C600B49CB4 /* NewsFeedCell.xib */; settings = {ASSET_TAGS = (); }; };
 		A4F0097C1BA5C58200E354E8 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009731BA5C58200E354E8 /* ArrayExtension.swift */; };
 		A4F0097D1BA5C58200E354E8 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009741BA5C58200E354E8 /* NSDateExtension.swift */; };
 		A4F0097E1BA5C58200E354E8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F009751BA5C58200E354E8 /* StringExtension.swift */; };
@@ -83,6 +99,22 @@
 /* Begin PBXFileReference section */
 		22998F17A84CD4856F3D9FAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8B56076838BA6FE84E4509D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EA201B1BB3E7E200B49CB4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A4EA201C1BB3E7E200B49CB4 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		A4EA20201BB3F43000B49CB4 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		A4EA20211BB3F43000B49CB4 /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		A4EA20251BB3FE4700B49CB4 /* ImageGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewController.swift; sourceTree = "<group>"; };
+		A4EA20261BB3FE4700B49CB4 /* ImageGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryViewController.xib; sourceTree = "<group>"; };
+		A4EA202A1BB400C200B49CB4 /* ImageGalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryCell.swift; sourceTree = "<group>"; };
+		A4EA202B1BB400C200B49CB4 /* ImageGalleryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryCell.xib; sourceTree = "<group>"; };
+		A4EA202F1BB402BD00B49CB4 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		A4EA20301BB402BD00B49CB4 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
+		A4EA20341BB407D900B49CB4 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		A4EA20351BB407D900B49CB4 /* NewPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewPostViewController.xib; sourceTree = "<group>"; };
+		A4EA20391BB40E1A00B49CB4 /* BookMarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
+		A4EA203A1BB40E1A00B49CB4 /* BookMarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookMarkViewController.xib; sourceTree = "<group>"; };
+		A4EA203E1BB419C600B49CB4 /* NewsFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
+		A4EA203F1BB419C600B49CB4 /* NewsFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedCell.xib; sourceTree = "<group>"; };
 		A4F009731BA5C58200E354E8 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		A4F009741BA5C58200E354E8 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		A4F009751BA5C58200E354E8 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -187,6 +219,72 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A4EA201F1BB3EA3800B49CB4 /* Cell & Header */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA20201BB3F43000B49CB4 /* ProfileCell.swift */,
+				A4EA20211BB3F43000B49CB4 /* ProfileCell.xib */,
+			);
+			path = "Cell & Header";
+			sourceTree = "<group>";
+		};
+		A4EA20241BB3FE3600B49CB4 /* Image Gallery View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA20291BB400B000B49CB4 /* Cell */,
+				A4EA20251BB3FE4700B49CB4 /* ImageGalleryViewController.swift */,
+				A4EA20261BB3FE4700B49CB4 /* ImageGalleryViewController.xib */,
+			);
+			path = "Image Gallery View Controller";
+			sourceTree = "<group>";
+		};
+		A4EA20291BB400B000B49CB4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA202A1BB400C200B49CB4 /* ImageGalleryCell.swift */,
+				A4EA202B1BB400C200B49CB4 /* ImageGalleryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4EA202E1BB402AC00B49CB4 /* News Feed View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA203D1BB419B400B49CB4 /* Cell */,
+				A4EA20331BB407CC00B49CB4 /* New Post View Controller */,
+				A4EA202F1BB402BD00B49CB4 /* NewsFeedViewController.swift */,
+				A4EA20301BB402BD00B49CB4 /* NewsFeedViewController.xib */,
+			);
+			path = "News Feed View Controller";
+			sourceTree = "<group>";
+		};
+		A4EA20331BB407CC00B49CB4 /* New Post View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA20341BB407D900B49CB4 /* NewPostViewController.swift */,
+				A4EA20351BB407D900B49CB4 /* NewPostViewController.xib */,
+			);
+			path = "New Post View Controller";
+			sourceTree = "<group>";
+		};
+		A4EA20381BB40E0E00B49CB4 /* Book Mark View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA20391BB40E1A00B49CB4 /* BookMarkViewController.swift */,
+				A4EA203A1BB40E1A00B49CB4 /* BookMarkViewController.xib */,
+			);
+			path = "Book Mark View Controller";
+			sourceTree = "<group>";
+		};
+		A4EA203D1BB419B400B49CB4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA203E1BB419C600B49CB4 /* NewsFeedCell.swift */,
+				A4EA203F1BB419C600B49CB4 /* NewsFeedCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A4F009721BA5C58200E354E8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,7 +383,10 @@
 		A4F009CA1BA5E15700E354E8 /* Profile View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A4EA201F1BB3EA3800B49CB4 /* Cell & Header */,
 				A4F009CB1BA5E16700E354E8 /* Edit Profile View Controller */,
+				A4EA201B1BB3E7E200B49CB4 /* ProfileViewController.swift */,
+				A4EA201C1BB3E7E200B49CB4 /* ProfileViewController.xib */,
 			);
 			path = "Profile View Controller";
 			sourceTree = "<group>";
@@ -365,6 +466,9 @@
 		A4FC2C2F1B91FE91000AFD50 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A4EA20381BB40E0E00B49CB4 /* Book Mark View Controller */,
+				A4EA202E1BB402AC00B49CB4 /* News Feed View Controller */,
+				A4EA20241BB3FE3600B49CB4 /* Image Gallery View Controller */,
 				A4F009CA1BA5E15700E354E8 /* Profile View Controller */,
 				A4F009BC1BA5DB5C00E354E8 /* Menu View Controller */,
 				A4F009B21BA5D19E00E354E8 /* Notification View Controller */,
@@ -474,7 +578,9 @@
 		A4FC2C001B91FADD000AFD50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = SkyDance;
 				TargetAttributes = {
 					A4FC2C071B91FADD000AFD50 = {
@@ -516,8 +622,10 @@
 				A4FC2C341B91FEAC000AFD50 /* LoginViewController.xib in Resources */,
 				A4F009CF1BA5E17700E354E8 /* EditProfileViewController.xib in Resources */,
 				A4F009BB1BA5D1F700E354E8 /* NotificationCell.xib in Resources */,
+				A4EA20321BB402BD00B49CB4 /* NewsFeedViewController.xib in Resources */,
 				A4FC2C4C1B92010B000AFD50 /* OpenSans-Semibold.ttf in Resources */,
 				A4FC2C461B92010B000AFD50 /* OpenSans-ExtraBold.ttf in Resources */,
+				A4EA202D1BB400C200B49CB4 /* ImageGalleryCell.xib in Resources */,
 				A4FC2C131B91FADD000AFD50 /* Main.storyboard in Resources */,
 				A4F009AC1BA5D02500E354E8 /* SettingSwitchCell.xib in Resources */,
 				A4F009A71BA5CF8B00E354E8 /* SettingViewController.xib in Resources */,
@@ -525,19 +633,25 @@
 				A4F009C91BA5DF8600E354E8 /* TopMenuCell.xib in Resources */,
 				A4F009991BA5C84600E354E8 /* WelcomeViewController.xib in Resources */,
 				A4F009C51BA5DCE100E354E8 /* MenuCell.xib in Resources */,
+				A4EA203C1BB40E1A00B49CB4 /* BookMarkViewController.xib in Resources */,
 				A4F009901BA5C5CB00E354E8 /* Roboto-Thin.ttf in Resources */,
+				A4EA20281BB3FE4700B49CB4 /* ImageGalleryViewController.xib in Resources */,
 				A4F0098E1BA5C5CB00E354E8 /* Roboto-Medium.ttf in Resources */,
 				A4FC2C181B91FADD000AFD50 /* LaunchScreen.xib in Resources */,
+				A4EA20371BB407D900B49CB4 /* NewPostViewController.xib in Resources */,
 				A4FC2C441B92010B000AFD50 /* OpenSans-Bold.ttf in Resources */,
 				A4F009B61BA5D1AC00E354E8 /* NotificationViewController.xib in Resources */,
 				A4FC2C151B91FADD000AFD50 /* Images.xcassets in Resources */,
+				A4EA20411BB419C600B49CB4 /* NewsFeedCell.xib in Resources */,
 				A4FC2C4D1B92010B000AFD50 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				A4F009C01BA5DB6C00E354E8 /* MenuViewController.xib in Resources */,
 				A4F0098D1BA5C5CB00E354E8 /* Roboto-Light.ttf in Resources */,
 				A4FC2C491B92010B000AFD50 /* OpenSans-Light.ttf in Resources */,
 				A4F0098F1BA5C5CB00E354E8 /* Roboto-Regular.ttf in Resources */,
 				A4F0099D1BA5C8B000E354E8 /* CategoryViewController.xib in Resources */,
+				A4EA201E1BB3E7E200B49CB4 /* ProfileViewController.xib in Resources */,
 				A4F009A21BA5CC2C00E354E8 /* FavoriteCell.xib in Resources */,
+				A4EA20231BB3F43000B49CB4 /* ProfileCell.xib in Resources */,
 				A4FC2C4B1B92010B000AFD50 /* OpenSans-Regular.ttf in Resources */,
 				A4F009B01BA5D10300E354E8 /* SettingOnlyTextCell.xib in Resources */,
 				A4F0098C1BA5C5CB00E354E8 /* Roboto-Bold.ttf in Resources */,
@@ -594,13 +708,16 @@
 			files = (
 				A4F0097D1BA5C58200E354E8 /* NSDateExtension.swift in Sources */,
 				A4F009981BA5C84600E354E8 /* WelcomeViewController.swift in Sources */,
+				A4EA20271BB3FE4700B49CB4 /* ImageGalleryViewController.swift in Sources */,
 				A4F009BA1BA5D1F700E354E8 /* NotificationCell.swift in Sources */,
 				A4F009AB1BA5D02500E354E8 /* SettingSwitchCell.swift in Sources */,
 				A4F0099C1BA5C8B000E354E8 /* CategoryViewController.swift in Sources */,
 				A4F0097F1BA5C58200E354E8 /* UIButtonExtension.swift in Sources */,
+				A4EA20311BB402BD00B49CB4 /* NewsFeedViewController.swift in Sources */,
 				A4F0097E1BA5C58200E354E8 /* StringExtension.swift in Sources */,
 				A4F009BF1BA5DB6C00E354E8 /* MenuViewController.swift in Sources */,
 				A4F009951BA5C79700E354E8 /* Utilities.swift in Sources */,
+				A4EA20361BB407D900B49CB4 /* NewPostViewController.swift in Sources */,
 				A4F009831BA5C58200E354E8 /* UITextViewExtension.swift in Sources */,
 				A4F009811BA5C58200E354E8 /* UIImageExtension.swift in Sources */,
 				A4F0097C1BA5C58200E354E8 /* ArrayExtension.swift in Sources */,
@@ -608,16 +725,21 @@
 				A4FC2C331B91FEAC000AFD50 /* LoginViewController.swift in Sources */,
 				A4F009B51BA5D1AC00E354E8 /* NotificationViewController.swift in Sources */,
 				A4F009801BA5C58200E354E8 /* UIColorExtension.swift in Sources */,
+				A4EA202C1BB400C200B49CB4 /* ImageGalleryCell.swift in Sources */,
 				A4F009C81BA5DF8600E354E8 /* TopMenuCell.swift in Sources */,
 				A4F009941BA5C79700E354E8 /* AppConstant.swift in Sources */,
+				A4EA201D1BB3E7E200B49CB4 /* ProfileViewController.swift in Sources */,
 				A4F009AF1BA5D10300E354E8 /* SettingOnlyTextCell.swift in Sources */,
 				A4F009841BA5C58200E354E8 /* UIViewExtension.swift in Sources */,
+				A4EA20401BB419C600B49CB4 /* NewsFeedCell.swift in Sources */,
 				A4FC2C371B91FFB6000AFD50 /* BaseViewController.swift in Sources */,
 				A4F009A11BA5CC2C00E354E8 /* FavoriteCell.swift in Sources */,
 				A4F009C41BA5DCE100E354E8 /* MenuCell.swift in Sources */,
 				A4F009A61BA5CF8B00E354E8 /* SettingViewController.swift in Sources */,
 				A4FC2C101B91FADD000AFD50 /* ViewController.swift in Sources */,
+				A4EA203B1BB40E1A00B49CB4 /* BookMarkViewController.swift in Sources */,
 				A4FC2C0E1B91FADD000AFD50 /* AppDelegate.swift in Sources */,
+				A4EA20221BB3F43000B49CB4 /* ProfileCell.swift in Sources */,
 				A4F009CE1BA5E17700E354E8 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,6 +803,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -750,6 +873,7 @@
 				INFOPLIST_FILE = FashionSocial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skydance.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FashionSocial/FashionSocial-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -765,6 +889,7 @@
 				INFOPLIST_FILE = FashionSocial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skydance.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FashionSocial/FashionSocial-Bridging-Header.h";
 			};
@@ -784,6 +909,7 @@
 				);
 				INFOPLIST_FILE = FashionSocialTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skydance.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionSocial.app/FashionSocial";
 			};
@@ -799,6 +925,7 @@
 				);
 				INFOPLIST_FILE = FashionSocialTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skydance.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionSocial.app/FashionSocial";
 			};
