@@ -44,11 +44,9 @@ class ProfileViewController: BaseViewController, UITableViewDelegate, UITableVie
     // MARK: DATA
     func refreshData() {
         self.refreshControl.endRefreshing()
-        
     }
     
     // MARK: BUTTON ACTION
-    
     @IBAction func didSelectEditButton(sender: AnyObject) {
         let editProfileViewController = EditProfileViewController()
         editProfileViewController.isEdit = true
@@ -62,7 +60,7 @@ class ProfileViewController: BaseViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier) as! ProfileCell
-        
+        cell.configCell()
         return cell
     }
     

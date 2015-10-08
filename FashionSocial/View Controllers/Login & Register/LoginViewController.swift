@@ -69,6 +69,7 @@ class LoginViewController: BaseViewController {
             if (error == nil){
                 if let _email = result["email"] as? String {
                     self.email = _email
+                    UserObject.sharedUser.email = self.email
                 }
                 if let _gender = result["gender"] as? String {
                     if _gender == "male" {
@@ -76,18 +77,23 @@ class LoginViewController: BaseViewController {
                     } else if _gender == "female" {
                         self.gender = 1
                     }
+                    UserObject.sharedUser.gender = self.gender
                 }
                 if let _name = result["name"] as? String {
                     self.name = _name
+                    UserObject.sharedUser.name = self.name
                 }
                 
                 if let _picture = result["picture"] as? Dictionary<String, AnyObject> {
                     if let _data = _picture["data"] as? Dictionary<String, AnyObject> {
                         if let _photoURL = _data["url"] as? String {
                             self.avatar = _photoURL
+                            UserObject.sharedUser.photoURL = self.avatar
                         }
                     }
                 }
+                UserObject.sharedUser.photoURL = "https://graph.facebook.com/\(FBSDKAccessToken.currentAccessToken().userID)/picture?width=90&height=90"
+                UserObject.sharedUser.saveOffline()
                 MRProgressOverlayView.dismissOverlayForView(self.view, animated: true)
                 completion()
             }

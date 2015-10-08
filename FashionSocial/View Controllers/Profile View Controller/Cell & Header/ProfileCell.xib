@@ -226,7 +226,10 @@
                     <constraint firstAttribute="trailing" secondItem="87u-1K-SV9" secondAttribute="trailing" id="cUl-fD-slB"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="252" y="278"/>
+            <connections>
+                <outlet property="avatar" destination="3SS-lf-5gg" id="XmY-qX-Q9e"/>
+            </connections>
+            <point key="canvasLocation" x="296" y="281"/>
         </tableViewCell>
     </objects>
     <resources>

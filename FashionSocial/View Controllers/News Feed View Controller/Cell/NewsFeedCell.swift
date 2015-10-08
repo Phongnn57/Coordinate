@@ -9,7 +9,18 @@
 import UIKit
 
 class NewsFeedCell: UITableViewCell {
-
+    
+    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var timeAgo: UILabel!
+    @IBOutlet weak var mediaView: UIView!
+    
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var detailDescription: UITextView!
+    @IBOutlet weak var commentCount: UILabel!
+    @IBOutlet weak var likeCount: UILabel!
+    @IBOutlet weak var mediaRatio: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +28,24 @@ class NewsFeedCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func configCell() {
+        self.avatar.sd_setImageWithURL(NSURL(string: UserObject.sharedUser.photoURL), placeholderImage: UIImage(named: "demo_avatar"))
+    }
+    
+    func configCellWithNumberOfImage(imgNum: Int) {
+        let tmpRect = self.mediaView.frame
+        if imgNum == 1 {
+            self.mediaView.frame = CGRectMake(tmpRect.origin.x, tmpRect.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.width * 598 / 1200)
+        } else if imgNum == 2 {
+            self.mediaView.frame = CGRectMake(tmpRect.origin.x, tmpRect.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.width)
+        } else if imgNum == 3 {
+            self.mediaView.frame = CGRectMake(tmpRect.origin.x, tmpRect.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.width)
+        } else if imgNum == 4 {
+            self.mediaView.frame = CGRectMake(tmpRect.origin.x, tmpRect.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.width)
+        }
+        self.layoutIfNeeded()
     }
     
 }

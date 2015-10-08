@@ -1,16 +1,15 @@
 //
-//  ProfileCell.swift
+//  CommentCell.swift
 //  FashionSocial
 //
-//  Created by Nguyen Nam Phong on 9/24/15.
+//  Created by Nguyen Nam Phong on 10/1/15.
 //  Copyright © 2015 SkyDance. All rights reserved.
 //
 
 import UIKit
 
-class ProfileCell: UITableViewCell {
+class CommentCell: UITableViewCell {
 
-    @IBOutlet weak var avatar: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,10 +19,6 @@ class ProfileCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    
-    func configCell() {
-        self.avatar.sd_setImageWithURL(NSURL(string: UserObject.sharedUser.photoURL), placeholderImage: UIImage(named: "demo_avatar"))
     }
     
 }

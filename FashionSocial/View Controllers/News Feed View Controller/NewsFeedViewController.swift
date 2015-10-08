@@ -53,7 +53,7 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
         self.btnNotification = UIBarButtonItem(customView: noti)
         
         let btn = UIButton(type: .Custom)
-        btn.frame = CGRectMake(0, 0, 40, 40)
+        btn.frame = CGRectMake(0, 0, 30, 30)
         btn.setImage(UIImage(named: "new_post"), forState: UIControlState.Normal)
         btn.addTarget(self, action: "goToNewPost", forControlEvents: UIControlEvents.TouchUpInside)
         self.btnNewPost = UIBarButtonItem(customView: btn)
@@ -86,13 +86,14 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
     
     // MARK: TABLEVIEW
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 4
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier) as! NewsFeedCell
-        
+//        cell.configCellWithNumberOfImage(indexPath.row + 1)
+        cell.configCell()
         return cell
     }
     

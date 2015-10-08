@@ -10,6 +10,7 @@ import UIKit
 
 class TopMenuCell: UITableViewCell {
 
+    @IBOutlet weak var avatar: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +18,10 @@ class TopMenuCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func configCell() {
+        self.avatar.sd_setImageWithURL(NSURL(string: UserObject.sharedUser.photoURL), placeholderImage: UIImage(named: "demo_avatar"))
     }
     
 }

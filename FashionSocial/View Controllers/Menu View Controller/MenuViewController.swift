@@ -44,7 +44,7 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier(TopCellIdentifier) as! TopMenuCell
-            
+            cell.configCell()
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier) as! MenuCell

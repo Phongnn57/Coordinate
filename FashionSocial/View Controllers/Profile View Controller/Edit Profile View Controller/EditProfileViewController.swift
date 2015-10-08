@@ -31,6 +31,9 @@ class EditProfileViewController: BaseViewController {
         if !self.isEdit {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             self.btnBack.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.btnSave.hidden = true
+        } else {
+            self.btnSave.hidden = false
         }
     }
     
