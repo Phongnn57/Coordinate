@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, NewsFeedCellDelegate {
 
     @IBOutlet weak var tableview: UITableView!
     var refreshControl: UIRefreshControl!
@@ -94,6 +94,8 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier) as! NewsFeedCell
 //        cell.configCellWithNumberOfImage(indexPath.row + 1)
         cell.configCell()
+        cell.delegate = self
+        cell.indexPath = indexPath
         return cell
     }
     
@@ -107,6 +109,19 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 200 + SCREEN_SIZE.width  * 15/32
+    }
+    
+    // Mark: Button action
+    func didSelectLikeAtIndexPath(indexpath: NSIndexPath) {
+        self.view.makeToast("You just select like the post at index: \(indexpath.row)")
+    }
+    
+    func didSelectCommentAtIndexPath(indexpath: NSIndexPath) {
+        self.view.makeToast("You just select comment button the post at index: \(indexpath.row)")
+    }
+    
+    func didSelectMoreAtIndexPath(indexpath: NSIndexPath) {
+        self.view.makeToast("You just select more button the post at index: \(indexpath.row)")
     }
 
 }

@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol NewsFeedCellDelegate {
+    func didSelectLikeAtIndexPath(indexpath: NSIndexPath)
+    func didSelectCommentAtIndexPath(indexpath: NSIndexPath)
+    func didSelectMoreAtIndexPath(indexpath: NSIndexPath)
+}
+
 class NewsFeedCell: UITableViewCell {
     
     @IBOutlet weak var avatar: UIImageView!
@@ -20,6 +26,8 @@ class NewsFeedCell: UITableViewCell {
     @IBOutlet weak var commentCount: UILabel!
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var mediaRatio: NSLayoutConstraint!
+    var delegate: NewsFeedCellDelegate?
+    var indexPath: NSIndexPath!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -48,4 +56,13 @@ class NewsFeedCell: UITableViewCell {
         self.layoutIfNeeded()
     }
     
+    @IBAction func didSelectMore(sender: AnyObject) {
+        self.delegate?.didSelectMoreAtIndexPath(self.indexPath)
+    }
+    @IBAction func didSelectComment(sender: AnyObject) {
+        self.delegate?.didSelectCommentAtIndexPath(self.indexPath)
+    }
+    @IBAction func didSelectLike(sender: AnyObject) {
+        self.delegate?.didSelectLikeAtIndexPath(self.indexPath)
+    }
 }
