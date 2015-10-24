@@ -12,6 +12,7 @@ protocol NewsFeedCellDelegate {
     func didSelectLikeAtIndexPath(indexpath: NSIndexPath)
     func didSelectCommentAtIndexPath(indexpath: NSIndexPath)
     func didSelectMoreAtIndexPath(indexpath: NSIndexPath)
+    func didSelectPhotoAtIndexPath(indexpath: NSIndexPath)
 }
 
 class NewsFeedCell: UITableViewCell {
@@ -20,6 +21,7 @@ class NewsFeedCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var timeAgo: UILabel!
     @IBOutlet weak var mediaView: UIView!
+    @IBOutlet weak var photo: UIImageView!
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var detailDescription: UITextView!
@@ -40,6 +42,7 @@ class NewsFeedCell: UITableViewCell {
     
     func configCell() {
         self.avatar.sd_setImageWithURL(NSURL(string: UserObject.sharedUser.photoURL), placeholderImage: UIImage(named: "demo_avatar"))
+        self.photo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "selectPhoto"))
     }
     
     func configCellWithNumberOfImage(imgNum: Int) {
@@ -54,6 +57,10 @@ class NewsFeedCell: UITableViewCell {
             self.mediaView.frame = CGRectMake(tmpRect.origin.x, tmpRect.origin.y, SCREEN_SIZE.width, SCREEN_SIZE.width)
         }
         self.layoutIfNeeded()
+    }
+    
+    func selectPhoto() {
+        self.delegate?.didSelectPhotoAtIndexPath(self.indexPath)
     }
     
     @IBAction func didSelectMore(sender: AnyObject) {

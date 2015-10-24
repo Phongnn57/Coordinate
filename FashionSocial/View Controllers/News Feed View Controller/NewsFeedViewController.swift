@@ -123,5 +123,9 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
     func didSelectMoreAtIndexPath(indexpath: NSIndexPath) {
         self.view.makeToast("You just select more button the post at index: \(indexpath.row)")
     }
+    
+    func didSelectPhotoAtIndexPath(indexpath: NSIndexPath) {
+        self.view.makeToast("Photo selected")
+    }
 
 }
