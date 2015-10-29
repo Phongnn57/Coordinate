@@ -42,16 +42,27 @@ class LoginViewController: BaseViewController {
     @IBAction func doLoginWithFacebook(sender: AnyObject) {
         if(FBSDKAccessToken.currentAccessToken() != nil){
             self.getUserProfile({ () -> Void in
-                self.view.makeToast("Đăng nhập thành công")
-                self.gotoWelcomePage()
+
+                
+                UserAPI.loginWithFacebook(FBSDKAccessToken.currentAccessToken().tokenString, completion: { () -> Void in
+                    self.gotoWelcomePage()
+                    }, failure: { (error) -> Void in
+                        self.view.makeToast(error)
+                })
+                
+                
             })
         }else{
             let login = FBSDKLoginManager()
             login.logInWithReadPermissions(["email", "public_profile"], fromViewController: self, handler: { (result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
                 if (error == nil && !result.isCancelled && result.grantedPermissions.contains("email")) {
                     self.getUserProfile({ () -> Void in
-                        self.view.makeToast("Đăng nhập thành công")
-                        self.gotoWelcomePage()
+
+                        UserAPI.loginWithFacebook(FBSDKAccessToken.currentAccessToken().tokenString, completion: { () -> Void in
+                            self.gotoWelcomePage()
+                            }, failure: { (error) -> Void in
+                                self.view.makeToast(error)
+                        })
                     })
                 }
             })

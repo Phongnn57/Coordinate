@@ -17,11 +17,13 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
     var btnNotification: UIBarButtonItem!
     
     private var CellIdentifier = "NewsFeedCell"
+    var posts: [PostObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.initialize()
+        self.loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +69,17 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
         self.navigationItem.leftBarButtonItems = [self.menuButton(), self.btnSearch]
     }
     
+    func loadData() {
+        PostAPI.getPostListOfUser(1, limit: 5, offset: 0, completion: { (postList) -> Void in
+            
+            self.posts = postList
+            self.tableview.reloadData()
+            
+            }) { (error) -> Void in
+                self.view.makeToast(error)
+        }
+    }
+    
     // MARK: DATA
     func refreshData() {
         self.refreshControl.endRefreshing()
@@ -86,14 +99,14 @@ class NewsFeedViewController: BaseViewController, UITableViewDelegate, UITableVi
     
     // MARK: TABLEVIEW
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return self.posts.count
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier) as! NewsFeedCell
 //        cell.configCellWithNumberOfImage(indexPath.row + 1)
-        cell.configCell()
+        cell.configCell(self.posts[indexPath.row])
         cell.delegate = self
         cell.indexPath = indexPath
         return cell

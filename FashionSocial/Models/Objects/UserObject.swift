@@ -22,6 +22,12 @@ class UserObject: NSObject, NSCoding {
     var photoURL: String = ""
     var userID: Int = 0
     var canAccess: Bool = false
+    var userName: String = ""
+    var age: Int = 0
+    var descrip: String = ""
+    var isOnline: Bool = false
+    
+    
     
     required override init() {
         super.init()
@@ -46,7 +52,13 @@ class UserObject: NSObject, NSCoding {
         if let photoURL = aDecoder.decodeObjectForKey("photoURL") as? String {
             self.photoURL = photoURL
         }
-        
+        if let userName = aDecoder.decodeObjectForKey("userName") as? String {
+            self.userName = userName
+        }
+        if let descrip = aDecoder.decodeObjectForKey("description") as? String {
+            self.descrip = descrip
+        }
+        self.age = aDecoder.decodeIntegerForKey("age")
         self.gender = aDecoder.decodeIntegerForKey("gender")
         self.userID = aDecoder.decodeIntegerForKey("userID")
         self.lastUpdated = aDecoder.decodeIntegerForKey("lastUpdated")
@@ -64,6 +76,10 @@ class UserObject: NSObject, NSCoding {
         aCoder.encodeInteger(self.userID, forKey: "userID")
         aCoder.encodeInteger(self.lastUpdated, forKey: "lastUpdated")
         aCoder.encodeBool(self.canAccess, forKey: "canAccess")
+        aCoder.encodeObject(self.userName, forKey: "userName")
+        aCoder.encodeObject(self.descrip, forKey: "description")
+        aCoder.encodeInteger(self.age, forKey: "age")
+        
     }
     
     func saveOffline() {

@@ -23,7 +23,6 @@ class NewsFeedCell: UITableViewCell {
     @IBOutlet weak var mediaView: UIView!
     @IBOutlet weak var photo: UIImageView!
     
-    @IBOutlet weak var title: UILabel!
     @IBOutlet weak var detailDescription: UITextView!
     @IBOutlet weak var commentCount: UILabel!
     @IBOutlet weak var likeCount: UILabel!
@@ -40,9 +39,11 @@ class NewsFeedCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configCell() {
+    func configCell(post: PostObject) {
         self.avatar.sd_setImageWithURL(NSURL(string: UserObject.sharedUser.photoURL), placeholderImage: UIImage(named: "demo_avatar"))
         self.photo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "selectPhoto"))
+        
+        self.detailDescription.text = post.title
     }
     
     func configCellWithNumberOfImage(imgNum: Int) {

@@ -53,7 +53,7 @@ struct AppConstant {
     
     struct API {
         struct URLs {
-            static let BaseURL: String = "http://app.bluebee-uet.com/soyba/"
+            static let BaseURL: String = "http://project.bluebee-uet.com/"
             
         }
         
